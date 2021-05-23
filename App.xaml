@@ -1,0 +1,9 @@
+﻿<Application x:Class="panel_logowania_wersja_od_początku.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:panel_logowania_wersja_od_początku"
+             StartupUri="LoggingWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

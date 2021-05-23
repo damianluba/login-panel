@@ -1,0 +1,17 @@
+W oparciu o projekt 3 lub 4 zmodyfikować klasę User(s) oraz dodać nowe funkcjonalności programu.
+
+Projekt powinien wykorzystywać technologię Windows Presentation Foundation a nie jak dotychczas Windows Forms.
+
+
+1. Usunąć/zmodyfikować zmienną bool isAdmin na wyliczenie: enum Ranga przedstawioną poniżej.
+
+public enum Ranga
+{
+            User =0,
+            Moderator,
+            Administrator=99,
+}
+
+2. Administrator posiada pełne uprawnienia do zarządzania użytkownikami. 
+3. Moderator może jedynie użytkownikowi zmienić hasło.
+4. Użytkownik z najniższymi uprawnieniami nie ma możliwości do przeglądania/modyfikowania uprawnień/użytkowników.

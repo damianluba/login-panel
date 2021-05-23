@@ -1,0 +1,17 @@
+﻿<Window x:Class="panel_logowania_wersja_od_początku.Portal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:panel_logowania_wersja_od_początku"
+        mc:Ignorable="d"
+        Title="Portal" Height="550.5" Width="945.5">
+    <Grid Cursor="Hand">
+        <Label x:Name="LabelWelcomingText" Content="Welcome on our portal," HorizontalAlignment="Left" Height="137" Margin="98,23,0,0" VerticalAlignment="Top" Width="544" FontFamily="Tempus Sans ITC" FontSize="48" Cursor="Arrow"/>
+        <Label x:Name="LabelPrivileges" Content="You are" HorizontalAlignment="Left" Margin="98,160,0,0" VerticalAlignment="Top" FontFamily="Reem Kufi" FontSize="26" Cursor="Help"/>
+        <Button x:Name="ButtonLogOut" Content="log out" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="660,402,0,0" Height="67" Click="ButtonLogOut_Click"/>
+        <Image x:Name="PictureBoxEditingUsers" Margin="98,255,706,102" Source="users3_edit.png" Stretch="Fill" MouseDown="PictureBoxEditingUsers_MouseDown" Visibility="Visible" Cursor="Hand"/>
+        <Label x:Name="LabelEditingUsers" Content="edit list of users" HorizontalAlignment="Left" Height="60" Margin="98,417,0,0" VerticalAlignment="Top" Width="153" FontFamily="Exotc350 Bd BT" FontSize="20" Visibility="Visible"/>
+
+    </Grid>
+</Window>

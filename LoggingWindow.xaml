@@ -1,0 +1,29 @@
+﻿<Window x:Name="LoggingWindowWithEverything" x:Class="panel_logowania_wersja_od_początku.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:panel_logowania_wersja_od_początku"
+        mc:Ignorable="d"
+        Title="LoggingWindow" Height="330" Width="420">
+    <Grid x:Name="Grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxPassword" HorizontalAlignment="Center" Height="20" Margin="0,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="password" IsReadOnlyCaretVisible="True" IsInactiveSelectionHighlightEnabled="True" GotFocus="TextBoxPassword_GotFocus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="{x:Null}" TabIndex="1" BorderThickness="0" ToolTip="enter your password here">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.4"/>
+            </TextBox.Background>
+            <TextBox.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <PasswordBox x:Name="PasswordBox" Height="20" Margin="0,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.317,-2.5" LostFocus="PasswordBox_LostFocus" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" BorderBrush="{x:Null}" BorderThickness="0" TabIndex="3" HorizontalAlignment="Center" Width="160"/>
+        <Image x:Name="CompanyImage" Margin="170,12,170,181" Source="Building_icon-13-512.png" HorizontalAlignment="Center" Width="100" Stretch="Fill" OpacityMask="Black" Height="106" VerticalAlignment="Center" ToolTip="click to visit our site" MouseDown="CompanyImage_MouseDown"/>
+        <TextBox x:Name="TextBoxLogin" Height="20" Margin="140,144,140,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="login" TextAlignment="Center" MouseDown="TextBoxLogin_MouseDown" GotFocus="TextBoxLogin_GotFocus" Background="White" LostFocus="TextBoxLogin_LostFocus" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" VerticalContentAlignment="Center" BorderBrush="{x:Null}" BorderThickness="0" TabIndex="0" ToolTip="enter your login here" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="160"/>
+        <Button x:Name="ButtonLogIn" Content="log in" HorizontalAlignment="Center" Height="23" Margin="0,208,0,0" VerticalAlignment="Top" Width="76" Click="ButtonLogIn_Click" TabIndex="4"/>
+        <Rectangle x:Name="LineLogin" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="160"/>
+        <Rectangle x:Name="LinePassword" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="160"/>
+
+    </Grid>
+</Window>
